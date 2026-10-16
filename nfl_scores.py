@@ -8,7 +8,7 @@ SCOREBOARD = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scorebo
 FAVORITES = {"PHI", "GB", "MIA"}  # Eagles, Packers, Dolphins
 ID_FILE = "nfl_message_id.txt"
 STATE_FILE = "nfl_state.json"
-HEADERS = {"User-Agent": "nfl-scores-bot/1.0"}
+HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36", "Accept": "application/json"}
 
 
 def parse_game(event):
