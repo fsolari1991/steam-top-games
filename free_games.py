@@ -105,7 +105,7 @@ def main():
 
     try:
         for g in to_post:
-            r = requests.post(webhook, json={"embeds": [build_embed(g)]}, headers=HEADERS, timeout=30)
+            r = requests.post(webhook, json={"embeds": [build_embed(g)], "flags": 4096}, headers=HEADERS, timeout=30)
             r.raise_for_status()
             if g["id"] not in remembered:
                 remembered.append(g["id"])
